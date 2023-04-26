@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ac10191c-b1c6-4113-ac65-6d00851a703c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[Select * from HOaDOn]]>
+	</queryString>
+	<field name="IDHOADON" class="java.lang.Integer"/>
+	<field name="NGAYLAP" class="java.sql.Timestamp"/>
+	<field name="TONGTIEN" class="java.lang.Double"/>
+	<field name="TINHTRANG" class="java.lang.Integer"/>
+	<field name="SOPHIEUDATPHONG" class="java.lang.Integer"/>
+	<field name="SOPHIEUSDDV" class="java.lang.Integer"/>
+	<field name="MANV" class="java.lang.Integer"/>
+	<field name="MAPHONG" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="179" y="13" width="197" height="53" uuid="4bf35451-ef65-4a59-b8e3-353e77ec0c62"/>
+				<textElement>
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[THỐNG KÊ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="4" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="26" y="41" width="100" height="20" uuid="99de619b-531b-4328-97bf-ed1e19e999b4"/>
+				<text><![CDATA[IDHOADON]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="126" y="41" width="100" height="20" uuid="77ccf062-d225-4533-a6e6-b6a9366b87db"/>
+				<text><![CDATA[Ngày lập]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="41" width="100" height="20" uuid="02de95d2-4ef9-43c3-8bce-03001ecbcd55"/>
+				<text><![CDATA[Mã nhân viên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="41" width="100" height="20" uuid="55bfe539-584c-4088-ba58-ac004f430b54"/>
+				<text><![CDATA[Mã phòng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="41" width="100" height="20" uuid="e64c22a2-7cba-409c-9543-bd8bdaec80f2"/>
+				<text><![CDATA[Tổng tiền]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="26" y="1" width="100" height="20" uuid="123ac06a-8220-4218-997a-1b7d5f1d7652"/>
+				<textFieldExpression><![CDATA[$F{IDHOADON}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="126" y="1" width="100" height="20" uuid="1fdbf1a7-72d7-422d-aa7a-b68415956d53"/>
+				<textFieldExpression><![CDATA[$F{NGAYLAP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="226" y="1" width="100" height="20" uuid="a2428bdd-8c27-42c0-bc47-696c63309486"/>
+				<textFieldExpression><![CDATA[$F{MANV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="1" width="100" height="20" uuid="4322320e-1a2b-4c5d-adb7-1d867b0c0526"/>
+				<textFieldExpression><![CDATA[$F{MAPHONG}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="1" width="100" height="20" uuid="13744598-c130-42c8-9a14-6956a4fdb002"/>
+				<textFieldExpression><![CDATA[$F{TONGTIEN}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="9" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="2" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="2" splitType="Stretch"/>
+	</summary>
+</jasperReport>
